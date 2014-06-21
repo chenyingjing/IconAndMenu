@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css">
+    <script src="lib/jquery-1.10.2.js"></script>
+    <script src="lib/jquery.ui.core.js"></script>
+    <script src="lib/jquery.ui.widget.js"></script>
+    <script src="lib/jquery.ui.position.js"></script>
+    <script src="lib/jquery.ui.menu.js"></script>
+    <link rel="stylesheet" href="css/demos.css">
+    <script>
+        $(function () {
+            $(".mymenu").menu().hide();
+            $(".ui-icon-triangle-1-s").click(function () {
+                $(".mymenu").show();
+            });
+        });
+
+        function menublur(event, ui) {
+            //if ($("#mymenu*").has(":focus").length == 0) {
+            if (ui.item != null) {
+                alert(ui.item);
+            }
+            $("#mymenu").hide();
+            //}
+        }
+    </script>
+    <style type="text/css">
+        .menubar > li
+        {
+            float: left;
+        }
+
+        .menubar, .menubar ul, .menubar li
+        {
+            cursor: pointer;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menubar" style="position:absolute">
+        <li>sssssssss</li>
+        <li>
+            <ul>
+                <li>
+                    <span class="ui-icon ui-icon-triangle-1-s"></span>
+                </li>
+                <li>
+                    <ul class="mymenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div>
+        ddddeeww
+    </div>
+    <h1>ddddeeww
+    </h1>
+    <div>
+        ddddeeww
+    </div>
+    <ul class="menubar" style="position:absolute;top:100px;">
+        <li>yyyyyyyyyy</li>
+        <li>
+            <ul>
+                <li>
+                    <span class="ui-icon ui-icon-triangle-1-s"></span>
+                </li>
+                <li>
+                    <ul class="mymenu" style="position:absolute;right:-10px">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>
+        xxxxxxx
+    </div>
+</body>
+</html>
